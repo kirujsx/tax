@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website name</title>
+    <meta name="description" content="website description">
+    <meta property="title" content="title">
+    <meta property="og:title" content="title">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://placehold.co/10x10">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <style>
+        /* Animations for scrolling and page load */
+        .animate {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .animate.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="right">
+            <span class="logo"><img src="https://placehold.co/50x50" alt=""></span>
+            <span class="logo-name">Todo-Tax</span>
+        </div>
+        <div class="left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://auth.sharefile.io/securelogin/login" rel="noopener" target="_blank">Sign-in</a>
+                </li>
+                <li><button class="btn">Appointment</button></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="menuIcon-holder"><span class="menu-icon" onclick="openNav()">&#9776;</span></li>
+            </ul>
+        </div>
+    </header>
+    <div class="side" id="mySidenav">
+        <div>
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+        </div><br />
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="https://auth.sharefile.io/securelogin/login" rel="noopener" target="_blank">Sign-in</a>
+                </li>
+                <li><button class="btn">Appointment</button></li>
+        </nav>
+    </div>
+
+    <div class="top-margin">
+        <div>
+            <section class="container1  fixed-container ">
+                <div class="con-container1 animate">
+                    <div class="left-container1 animate">
+                        <div class="animate">
+                            <h1 class=""><span class="">Financial</span> planning for every <br /> facet of
+                                your life.</h1>
+                        </div>
+                        <div>
+                            <p class=" container1-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Similique
+                                velit
+                                id
+                                quasi!
+                                Porro quis maiores
+                                corrupti perferendis expedita cum praesentium sapiente nulla tenetur qui. Et incidunt
+                                laboriosam
+                                perspiciatis iusto dolores?</p>
+                        </div>
+                        <br />
+                        <div class="animate"><button class="con-container1-btn">Make an Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="container2 animate">
+            <div class="left-container2 animate">
+                <div class="holder-container2">
+                    <div class="div-pocardHolder">
+                        <img src=" ./img/logoimg1.png" alt="image" class="container2-img" />
+                    </div>
+                </div>
+            </div>
+            <div class="right-container2 animate">
+                <div class=" right-container2-holder">
+                    <div>
+                        <i class="who-we-are">Who we are</i>
+                        <h2>Your one-stop destination for the best tax law experts.</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis voluptas
+                            nisi
+                            nulla doloremque omnis excepturi necessitatibus impedit, officiis blanditiis rerum aperiam
+                            est
+                            modi? Autem atque alias veniam ea ullam.</p>
+                        <br />
+                        <hr>
+                        <div class="holder-container2-right">
+                            <ul>
+                                <li>
+                                    <i style="font-size:19px" class="fa">&#xf058;</i>
+                                    <span class="span-lists-right-container2">Felis in hendrerit ad ipsum</span>
+                                </li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i> <span
+                                        class="span-lists-right-container2">Neque
+                                        euismod</span></li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                        class="span-lists-right-container2">ultricies
+                                        mmagna
+                                        risus</span>
+                                </li>
+                                <li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                        class="span-lists-right-container2">Nisl
+                                        interdum
+                                        nascetur
+                                    </span></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <i style="font-size:20px" class="fa">&#xf058;</i>
+                                    <span class="span-lists-right-container2">Felis in hendrerit ad ipsum</span>
+                                </li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i> <span
+                                        class="span-lists-right-container2">Neque
+                                        euismod</span></li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                        class="span-lists-right-container2"> ultricies
+                                        mmagna
+                                        risus</span>
+                                </li>
+                                <li>
+                                <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                        class="span-lists-right-container2"> Nisl
+                                        interdum
+                                        nascetur
+                                    </span></li>
+                            </ul>
+                        </div>
+                        <br /><br />
+                        <hr /><br />
+                        <button class="learn-more ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bar animate">
+            <div class="internal-bar ">
+                <ul>
+                    <li>
+                        <h2>25+</h2><br />
+                        <span>Years of Experience</span>
+                    </li>
+                    <li>
+                        <h2>20k+</h2><br />
+                        <span>case every year</span>
+                    </li>
+                    <li>
+                        <h2>5.2</h2><br />
+                        <span>Rating on clients</span>
+                    </li>
+                    <li>
+                        <h2>10k+</h2><br />
+                        <span>Happy Clients</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container3 animate">
+            <div class="left-container3">
+                <h3>WHY US?</h3><br />
+                <h1>Strategic <span>consulting </span>for<br /> financial success.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis, pulvinar dapibus leo.</p>
+                <div class="ul-con3">
+                    <ul>
+                        <li>
+                            <i style="font-size:19px" class="fa">&#xf058;</i>
+                            <span class="span-lists-right-container2">Felis in hendrerit ad ipsum</span>
+                        </li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i> <span
+                                class="span-lists-right-container2">Neque
+                                euismod</span></li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                class="span-lists-right-container2">ultricies
+                                mmagna
+                                risus</span>
+                        </li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i><span
+                                class="span-lists-right-container2">Nisl
+                                interdum
+                                nascetur
+                            </span></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i style="font-size:20px" class="fa">&#xf058;</i>
+                            <span class="span-lists-right-container2">Felis in hendrerit ad ipsum</span>
+                        </li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i> <span
+                                class="span-lists-right-container2">Neque
+                                euismod</span></li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i><span class="span-lists-right-container2">
+                                ultricies
+                                mmagna
+                                risus</span>
+                        </li>
+                        <li>
+                        <li> <i style="font-size:20px" class="fa">&#xf058;</i><span class="span-lists-right-container2">
+                                Nisl
+                                interdum
+                                nascetur
+                            </span></li>
+                    </ul>
+                </div><br />
+                <hr class="hr-con3" />
+                <br />
+                <button class="learn-more lrn-more-con3 transparent-btn">Learn More</button>
+            </div>
+            <div class="right-container3">
+                <img src="./img/img6.png" alt="" class="right-container3-img">
+            </div>
+        </section>
+        <section class="container4 animate">
+            <h3>Our Team</h3>
+            <h2>What we Offer.</h2>
+            <p class="ptitle-con4">Suspendisse ac condimentum velit. Nullam pulvinar a velit ac convallis. Proin non leo
+                ac
+                quam
+                blandit
+                faucibus sed nec ex. Pellentesque dapibus mi vehicula tincidunt porttitor.</p>
+            <div class="fildsetGrp-con4">
+                <div class="firstrow-fildsetGroup-con4 ">
+                    <div class="div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo1.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>Tax planing</h4>
+                        <p>Our team of experts works closely with individuals and businesses to develop effective
+                            tax
+                            strategies that help minimize liabilities and maximize deductions.</p>
+                    </div>
+                    <div class="div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo1.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>Tax Preparation</h4>
+                        <p>We provide comprehensive tax preparation services for individuals and businesses,
+                            ensuring
+                            all forms are accurately completed and filed on time to avoid penalties and fines.</p>
+                    </div>
+                    <div class="div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo2.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>Tax Compliance</h4>
+                        <p>
+                            We help businesses stay compliant with federal, state, and local tax laws and
+                            regulations,
+                            ensuring that they avoid costly penalties and fines.
+                        </p>
+                    </div>
+                </div>
+                <div class="secondrow-fildsetGroup-con4 ">
+                    <div class=" div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo3.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>Estate Planning</h4>
+                        <p>
+                            We provide estate planning services to help clients create a comprehensive plan for the
+                            transfer of their assets and wealth to their beneficiaries in a tax-efficient manner.
+                        </p>
+                    </div>
+                    <div class="div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo5.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>International Taxation</h4>
+                        <p>
+                            We provide specialized international tax services for individuals and businesses with
+                            global
+                            operations. Our team of experts can help clients navigate cross-border Taxation.
+                        </p>
+                    </div>
+                    <div class="div-holdeInfo-con4">
+                        <div class="img-holder">
+                            <img src="./svg/logo6.svg" alt="" class="img1-con4">
+                        </div>
+                        <h4>Business Tax Services</h4>
+                        <p>We provide a full range of tax services for businesses, including tax planning and
+                            preparation, compliance, and consulting. Our team has extensive experience working.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container5 animate ">
+            <div class=" internal-con5">
+                <div class="left-con5 ">
+                    <h4>our value</h4>
+                    <h2>
+                        Make your business stand out with our personalized accounting services.
+                    </h2>
+                    <p>
+                        Nascetur condimentum rutrum facilisis dis mus id laoreet litora amet fringilla hac. Letius in
+                        dis lobortis massa adipiscing placerat finibus tincidunt.
+                    </p>
+                </div>
+                <div class="right-con5">
+                    <div class="div1-con5">
+                        <div class="img-holder-con5">
+                            <img src="./svg/logo8.svg" alt="" class="img1-con4">
+                        </div>
+                        <div class="div1p-con5">
+                            <h3>Our Vision</h3>
+                            <p>
+                                Habitasse aptent penatibus justo in eu mus mollis praesent ut. Nec nostra pulvinar
+                                sapien quisque mattis convallis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div2-con5">
+                        <div class="img-holder-con5">
+                            <img src="./svg/logo7.svg" alt="">
+                        </div>
+                        <div class="div1p-con5">
+                            <h3>Our Vision</h3>
+                            <p>
+                                Habitasse aptent penatibus justo in eu mus mollis praesent ut. Nec nostra pulvinar
+                                sapien quisque mattis convallis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container6 animate">
+            <div class="internal-con6">
+                <div class="left-con6">
+                    <h2>
+                        Make your business stand <br /> out with our personalized <br /> accounting services.
+                    </h2><br />
+                    <p>
+                        Lobortis pede nec facilisis lacinia malesuada. At natoque ultricies blandit dapibus scelerisque
+                        platea pede eu semper dictumst. Accumsan metus rhoncus sociosqu nisi tincidunt mi faucibus.
+                    </p>
+                    <br />
+                    <hr />
+                    <br>
+                    <h3>Audit & Assurance</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.
+                    </p>
+                    <br />
+                    <h3>Advisory & Consultations</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, non architecto excepturi
+                        ipsam eius nisi odio blanditiis numquam voluptatem reprehenderit sint earum provident sapiente
+                        animi
+                        magnam a optio! Quasi?
+                    </p>
+                    <button class="learn-more lrn-more-con3 transparent-btn">Contact us</button>
+                </div>
+                <div class="right-con6">
+                    <img src="./img/logoimg2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container7 animate">
+            <div class="internal-con7">
+                <div class="left-con7">
+                    <form id="contact-form" action="./index.php" method="post">
+                        <div class="luxury-form-container">
+                            <h2>Contact Us</h2>
+                            <input type="email" autocomplete="off" id="email-input" name="email"
+                                placeholder="Enter your email"><br />
+                            <input type="text" id="name-input" name="name" placeholder="Enter your name"><br />
+                            <textarea id="message" name="message" cols="50" rows="10"
+                                placeholder="Enter your message"></textarea><br />
+                            <button type="submit">Send Message</button>
+                            <br /><br />
+                            <span id="error-msg"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-con7">
+                    <h2>Get in touch</h2>
+                    <h3>Let's discuss how we can help and we will get back to you</h3>
+                </div>
+            </div>
+        </section>
+        <footer class="">
+            <div class="right-footer">
+                <span class="logo"><img src="https://placehold.co/50x50" alt=""></span>
+                <span class="logo-name">Todo-Tax</span>
+            </div>
+            <div class="left-footer">
+                <p>Manage your taxes with ease and stay connected to your financial future.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery Scroll Animation -->
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
