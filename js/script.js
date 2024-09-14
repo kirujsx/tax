@@ -17,12 +17,9 @@ $(document).ready(function () {
         var message = $('#message').val().trim();
         var isValid = true;
 
-        errorMsgElement.text(''); // Clear previous error messages
+        errorMsgElement.text('');
 
-        if (email === '') {
-            showError('Email should be filled');
-            isValid = false;
-        } else if (!isValidEmail(email)) {
+        if (email === '' || !isValidEmail(email)) {
             showError('Email should be a valid email address');
             isValid = false;
         } else if (name === '') {
@@ -37,24 +34,20 @@ $(document).ready(function () {
         }
 
         if (isValid) {
-            // Submit the form via AJAX
             $.ajax({
                 type: 'POST',
                 url: './index.php',
                 data: form.serialize(),
                 dataType: 'json',
-                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
                 success: function (response) {
                     if (response.success) {
                         showSuccess(response.message);
-                        form[0].reset(); // Clear the form
+                        form[0].reset();
                     } else {
                         showError(response.message);
                     }
                 },
-                error: function (xhr, status, error) {
-                    console.error("AJAX Error:", status, error);
-                    console.log("Response Text:", xhr.responseText);
+                error: function () {
                     showError('An error occurred. Please try again later.');
                 }
             });
@@ -74,7 +67,6 @@ $(document).ready(function () {
         return emailRegex.test(email);
     }
 
-    // Clear error message when user starts typing
     form.find('input, textarea').on('input', function () {
         errorMsgElement.text('');
     });
