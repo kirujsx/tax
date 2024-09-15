@@ -56,6 +56,7 @@ $(document).ready(function () {
 
     function showError(message) {
         errorMsgElement.text(message).css('color', 'red');
+        errorMsgElement.text(message).css('background', '#131313');
     }
 
     function showSuccess(message) {
@@ -79,6 +80,28 @@ $(window).on('scroll', function () {
 
         // Check if the element is visible in the viewport
         if (windowBottom > elementTop + 50) {
+            $(this).addClass('in-view');
+        }
+    });
+});
+$(window).on('scroll', function () {
+    $('.left-animate').each(function () {
+        var elementTop = $(this).offset().top;
+        var windowBottom = $(window).scrollTop() + $(window).height();
+
+        // Check if the element is visible in the viewport
+        if (windowBottom > elementTop + 60) {
+            $(this).addClass('in-view');
+        }
+    });
+});
+$(window).on('scroll', function () {
+    $('.right-animate').each(function () {
+        var elementTop = $(this).offset().top;
+        var windowBottom = $(window).scrollTop() + $(window).height();
+
+        // Check if the element is visible in the viewport
+        if (windowBottom > elementTop + 60) {
             $(this).addClass('in-view');
         }
     });

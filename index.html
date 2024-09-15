@@ -32,6 +32,29 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .left-animate {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .left-animate.in-view {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .right-animate {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .right-animate.in-view {
+            opacity: 1;
+            transform: translateX(0);
+            transition-delay: 0.3s;
+        }
     </style>
 </head>
 
@@ -193,7 +216,7 @@
                 </ul>
             </div>
         </section>
-        <section class="container3 animate">
+        <section class="container3 left-animate">
             <div class="left-container3">
                 <h3>WHY US?</h3><br />
                 <h1>Strategic <span>consulting </span>for<br /> financial success.</h1>
@@ -256,8 +279,8 @@
                 quam
                 blandit
                 faucibus sed nec ex. Pellentesque dapibus mi vehicula tincidunt porttitor.</p>
-            <div class="fildsetGrp-con4">
-                <div class="firstrow-fildsetGroup-con4 ">
+            <div class="fildsetGrp-con4 ">
+                <div class="firstrow-fildsetGroup-con4 left-animate">
                     <div class="div-holdeInfo-con4">
                         <div class="img-holder">
                             <img src="./svg/logo1.svg" alt="" class="img1-con4">
@@ -288,7 +311,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="secondrow-fildsetGroup-con4 ">
+                <div class="secondrow-fildsetGroup-con4 right-animate">
                     <div class=" div-holdeInfo-con4">
                         <div class="img-holder">
                             <img src="./svg/logo3.svg" alt="" class="img1-con4">
@@ -394,7 +417,7 @@
                 </div>
             </div>
         </section>
-        <section class="container7 animate">
+        <section class="container7 right-animate">
             <div class="internal-con7">
                 <div class="left-con7">
                     <form id="contact-form" action="index.php" method="post">
@@ -425,6 +448,13 @@
             </div>
             <div class="left-footer">
                 <p>Manage your taxes with ease and stay connected to your financial future.</p>
+            </div>
+        </footer>
+        <footer class="">
+            <div class="bottom-footer">
+                <div>Location: 123 Main Street, Anytown, USA</div>
+                <div>Phone: (123) 456-7890</div>
+                <div>Email: fake123@example.com</div>
             </div>
         </footer>
     </div>

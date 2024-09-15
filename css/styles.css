@@ -1512,13 +1512,7 @@ button[type="submit"]:active {
 
 footer {
     background-color: #046464;
-    color: #fff;
     padding: 20px;
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    font-style: normal;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1548,4 +1542,24 @@ footer .left-footer p {
     font-weight: 400;
     text-align: center;
     /* background: #064040; */
+}
+
+.bottom-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.bottom-footer div {
+    text-align: center;
+    font-family: 'libre franklin', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 0;
+    width: 100%;
 }
