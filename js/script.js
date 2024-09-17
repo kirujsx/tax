@@ -73,6 +73,7 @@ $(document).ready(function () {
     });
 });
 
+
 $(window).on('scroll', function () {
     $('.animate').each(function () {
         var elementTop = $(this).offset().top;
