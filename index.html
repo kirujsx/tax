@@ -403,20 +403,21 @@
         <section class="container7 ">
             <div class=" internal-con7">
                 <div class="left-con7 animate">
-                    <form id=" contact-form" action="">
+                    <form id="contact-form" action="" method="post">
                         <div class="luxury-form-container">
                             <h2>Contact Us</h2>
                             <input type="email" autocomplete="off" id="email-input" name="email"
-                                placeholder="Enter your email" required><br />
-                            <input type="text" required id="name-input" name="name" placeholder="Enter your name"><br />
-                            <textarea id="message" required name="message" cols="50" rows="10"
-                                placeholder="Enter your message"></textarea><br />
-                            <button type="submit">Send Message</button>
+                                placeholder="Enter your email"><br />
+                            <span class="error-message"></span>
+                            <input type="text" id="name-input" name="name" placeholder="Enter your name"><br />
+                            <span class="error-message"></span>
+                            <textarea id="message" name="message" cols="50" rows="10"
+                                placeholder="Enter your message"></textarea><br /><br />
+                            <button type="submit">Send Message</button><br />
+                            <span class="error-message" id="error-msg"></span>
                             <br /><br />
-                            <span id="error-msg"></span>
                         </div>
                     </form>
-
                 </div>
                 <div class="right-con7 left-animate">
                     <h2>Get in touch</h2>

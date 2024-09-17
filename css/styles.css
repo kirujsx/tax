@@ -1537,13 +1537,17 @@ footer .left-footer p {
 }
 
 #error-msg {
-    color: rgba(220, 20, 60, 0.892);
+    color: rgb(255, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    margin-top: 5px;
+    padding: 12px;
     font-weight: 400;
     text-align: center;
-    /* background: #064040; */
+    background: #c30c0c60;
+    border: 2px solid #ac1515;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: none;
 }
 
 .bottom-footer {
